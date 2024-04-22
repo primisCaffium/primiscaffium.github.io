@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primis Caffium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Changa', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('https://www.pcworld.com/wp-content/uploads/2024/02/Linux.png?quality=50&strip=all') no-repeat center center/cover;
+            color: #fff;
+            padding-top: 20px;
+            text-align: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .sectionPrimary {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .sectionSecondary {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .sectionPrimary h2,
+        .sectionSecondary h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+            max-width: 60%; /* Adjust this value to change the narrow horizontal limit */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .sectionPrimary h3,
+        .sectionSecondary h3 {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #666;
+            max-width: 60%; /* Adjust this value to change the narrow horizontal limit */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .contact-form {
+            text-align: center;
+            max-width: 600px; /* Adjust this value to change the width of the form */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form form {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .contact-form form input,
+        .contact-form form textarea {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form form textarea {
+            height: 120px;
+        }
+
+        .contact-form form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form form button:hover {
+            background-color: #555;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .images img {
+            width: 200px;
+            margin: 0 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Primis Caffium</h1>
+        <p>Software services</p>
+    </header>
+
+    <div class="container">
+        <div class="sectionPrimary" id="next-gen">
+            <h2>Unleash the Power of Next-Gen Software Solutions!</h2>
+            <h3>Join us on a journey to redefine software development with cutting-edge technologies and innovative solutions. Let's revolutionize the future together.</h3>
+            <a href="#contact" class="contact-btn">Contact us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sectionSecondary" id="git">
+            <h2>Get Ahead with Our Tailored Git Workflows</h2>
+            <h3>Experience seamless collaboration and unparalleled efficiency with our bespoke Git workflows. It's your ticket to streamlining success.</h3>
+            <div class="images">
+                <img src="https://images.unsplash.com/photo-1466428996289-fb355538da1b?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHw5fHxtdXNpYyUyMGVxdWlwbWVudCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIwMjA3MDU1&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 1">
+                <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHwzOTF8fGVudGVycHJpc2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTYyMTI1OTE2MA&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 2">
+                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHw4Mnx8ZW50ZXJwcmlzZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIxMDY3ODIy&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="container"  id="contact">
+        <div class="sectionPrimary" id="connect">
+            <h2>Connect with Us!</h2>
+            <h3>Have a question or want to learn more about what we do? Send us a message! We'd love to hear from you.</h3>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/YOUR-FORM-ID" method="POST">
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+                    <input type="hidden" name="_next" value="https://YOUR-WEBSITE-URL/thankyou.html" />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
