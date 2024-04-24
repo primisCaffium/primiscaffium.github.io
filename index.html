@@ -1,249 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primis Caffium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Changa', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .pc-title {
-            font-family: 'Protest Revolution', sans-serif;
-            font-size: 4rem;
-        }
-
-        header {
-            background: url('https://github.com/primisCaffium/primisCaffium.github.io/blob/main/assets/bkg.jpg?raw=true') no-repeat center center/cover;
-            color: #fff;
-            padding-top: 20px;
-            text-align: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            z-index: -2;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7); /* Black background with 50% transparency */
-            z-index: -1;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            top: 600px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(transparent, #d8d8d8);
-            z-index: -1;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        .container {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .sectionPrimary {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #d8d8d8;
-        }
-
-        .sectionSecondary {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #010101;
-        }
-
-        .sectionPrimary h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #4c4c4c;
-            max-width: 60%; /* Adjust this value to change the narrow horizontal limit */
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .sectionSecondary h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #cccccc;
-            max-width: 60%; /* Adjust this value to change the narrow horizontal limit */
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .sectionPrimary h3,
-        .sectionSecondary h3 {
-            font-size: 20px;
-            margin-bottom: 40px;
-            color: #888888;
-            max-width: 60%; /* Adjust this value to change the narrow horizontal limit */
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .contact-form {
-            text-align: center;
-            min-width: 600px; /* Adjust this value to change the width of the form */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-form form {
-            display: inline-block;
-            text-align: left;
-            width: 100%;
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-        }
-
-        .contact-form form input,
-        .contact-form form textarea {
-            width: calc(100% - 40px);
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        .contact-form form textarea {
-            height: 120px;
-        }
-
-        .contact-form form button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form form button:hover {
-            background-color: #555;
-        }
-
-        .images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 40px;
-        }
-
-        .images img {
-            width: 200px;
-            margin: 0 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-btn {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .contact-btn:hover {
-            background-color: #555;
-        }
-
-        .drop-shadow {
-            text-shadow: 2px 2px 4px #000000;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Primis Caffium - Software Services</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<body>
-    <header>
-        <h1 class="drop-shadow pc-title">PRIMIS CAFFIUM</h1>
-        <p class="drop-shadow">Software services</p>
-    </header>
+<body class="is-boxed has-animations">
+<div class="body-wrap">
+	<header class="site-header">
+		<div class="container">
+			<div class="site-header-inner">
+				<div class="brand header-brand">
+					<h1 class="m-0">
+						<a href="#">
+							<img class="header-logo-image" src="dist/images/logo.svg" alt="Primis Caffium Logo">
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <div class="container">
-        <div class="sectionPrimary" id="next-gen">
-            <h2>Unleash the Power of Next-Gen Software Solutions!</h2>
-            <h3>Join us on a journey to redefine software development with cutting-edge technologies and innovative solutions. Let's revolutionize the future together.</h3>
-            <a href="#contact" class="contact-btn">Connect with us!</a>
-        </div>
-    </div>
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="hero-inner">
+					<div class="hero-copy">
+						<h1 class="hero-title mt-0">Primis Caffium</h1>
+						<p class="hero-paragraph">
+							At Primis Caffium, we provide top-tier software services and consulting to help your business thrive in the digital age.
+							Specializing in Go, React, Flutter, PostgreSQL, and AWS services, we offer tailored solutions to meet your unique needs.
+							Whether you're looking to develop a mobile application, build a scalable web platform, or migrate to the cloud, we have the expertise to bring your vision to life.
+						</p>
+					</div>
+					<div class="hero-figure anime-element">
+						<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+							<rect width="528" height="396" style="fill:transparent;"/>
+						</svg>
+						<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+						<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+						<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+						<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+						<div class="hero-figure-box hero-figure-box-05"></div>
+						<div class="hero-figure-box hero-figure-box-06"></div>
+						<div class="hero-figure-box hero-figure-box-07"></div>
+						<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+						<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+						<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <div class="container">
-        <div class="sectionSecondary" id="git">
-            <h2>Get Ahead with Our Tailored Git Workflows</h2>
-            <h3>Experience seamless collaboration and unparalleled efficiency with our bespoke Git workflows. It's your ticket to streamlining success.</h3>
-            <div class="images">
-                <img src="https://images.unsplash.com/photo-1466428996289-fb355538da1b?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHw5fHxtdXNpYyUyMGVxdWlwbWVudCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIwMjA3MDU1&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 1">
-                <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHwzOTF8fGVudGVycHJpc2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTYyMTI1OTE2MA&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 2">
-                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixid=MnwyMjUyNTN8MHwxfHNlYXJjaHw4Mnx8ZW50ZXJwcmlzZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNjIxMDY3ODIy&ixlib=rb-1.2.1&w=250&h=350&crop=faces&fit=crop&fm=webp&q=85" alt="Image 3">
-            </div>
-        </div>
-    </div>
+		<section class="features section">
+			<div class="container">
+				<div class="features-inner section-inner has-bottom-divider">
+					<div class="features-wrap">
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+								</div>
+								<h4 class="feature-title mt-24">Go Development</h4>
+								<p class="text-sm mb-0">We utilize Go to build robust and scalable backend systems for your applications, ensuring top-notch performance and reliability.</p>
+							</div>
+						</div>
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+								</div>
+								<h4 class="feature-title mt-24">React Development</h4>
+								<p class="text-sm mb-0">Our expertise in React allows us to create dynamic and interactive user interfaces, providing an exceptional user experience for your applications.</p>
+							</div>
+						</div>
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+								</div>
+								<h4 class="feature-title mt-24">PostgreSQL</h4>
+								<p class="text-sm mb-0">We employ PostgreSQL to build and manage relational databases, ensuring the security and integrity of your data.</p>
+							</div>
+						</div>
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+								</div>
+								<h4 class="feature-title mt-24">Flutter Development</h4>
+								<p class="text-sm mb-0">With Flutter, we develop cross-platform mobile applications with a single codebase, ensuring consistency and reducing development time and cost.</p>
+							</div>
+						</div>
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-05.svg" alt="Feature 05">
+								</div>
+								<h4 class="feature-title mt-24">AWS Infrastructure</h4>
+								<p class="text-sm mb-0">Leveraging the power of Amazon Web Services (AWS), we provide comprehensive and scalable infrastructure solutions.</p>
+							</div>
+						</div>
+						<div class="feature text-center is-revealing">
+							<div class="feature-inner">
+								<div class="feature-icon">
+									<img src="dist/images/feature-icon-06.svg" alt="Feature 06">
+								</div>
+								<h4 class="feature-title mt-24">Consultation Services</h4>
+								<p class="text-sm mb-0">Beyond development, we provide personalized consultation services tailored to your unique business needs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <div class="container"  id="contact">
-        <div class="sectionPrimary" id="connect">
-            <h2>Connect with Us!</h2>
-            <h3>Have a question or want to learn more about what we do? Send us a message! We'd love to hear from you.</h3>
-            <div class="contact-form">
-                <form action="https://formsubmit.co/9d51b11133f0db79a65467534fe7ef5e" method="POST">
-                    <input type="email" name="email" placeholder="Your Email" required><br>
-                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
-                    <input type="hidden" name="_next" value="https://primiscaffium.github.io" />
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </div>
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-inner section-inner" style="display: block;">
+					<h3 class="section-title mt-0">Contact us!</h3><br/>
+
+					<div>
+						<form action="https://formsubmit.co/9d51b11133f0db79a65467534fe7ef5e" method="POST" >
+							<input class="input" type="email" name="email" placeholder="Your Email" required><br>
+							<textarea class="textarea" style="font-family: 'IBM Plex Sans', sans-serif;font-size: 16px;padding: 13px 16px;" name="message" rows="4" placeholder="Your Message" required></textarea><br>
+							<input  type="hidden" name="_next" value="https://primiscaffium.github.io/thank-you"/>
+							<button style="float: right" class="button button-primary button-wide-mobile" type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer-inner">
+				<div class="brand footer-brand">
+					<a href="#">
+						<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+					</a>
+					<div class="footer-copyright" style="margin-left: 10px">&copy; 2024 Primis Caffium, all rights reserved</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="dist/js/main.min.js"></script>
 </body>
 </html>
-
