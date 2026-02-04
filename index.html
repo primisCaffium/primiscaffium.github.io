@@ -127,8 +127,16 @@
 
 					<div>
 						<form action="https://formsubmit.co/9d51b11133f0db79a65467534fe7ef5e" method="POST" >
-							<input class="input" type="email" name="email" placeholder="Your Email" required><br>
-							<textarea class="textarea" style="font-family: 'IBM Plex Sans', sans-serif;font-size: 16px;padding: 13px 16px;" name="message" rows="4" placeholder="Your Message" required></textarea><br>
+							<label>
+								<input class="input" type="email" name="email" placeholder="Your Email" required>
+							</label>
+							<br>
+
+							<label>
+								<textarea class="textarea" style="font-family: 'IBM Plex Sans', sans-serif;font-size: 16px;padding: 13px 16px;" name="message" rows="4" placeholder="Your Message" required></textarea>
+							</label>
+							<br>
+
 							<input  type="hidden" name="_next" value="https://primiscaffium.github.io/thank-you"/>
 							<button style="float: right" class="button button-primary button-wide-mobile" type="submit">Send</button>
 						</form>
@@ -145,7 +153,13 @@
 					<a href="#">
 						<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
 					</a>
-					<div class="footer-copyright" style="margin-left: 10px">&copy; 2025 Primis Caffium, all rights reserved</div>
+					<div class="footer-copyright" style="margin-left: 10px">
+						&copy; &nbsp; <span id="current-year"> </span> &nbsp; Primis Caffium, all rights reserved.
+					</div>
+
+					<script>
+						document.getElementById("current-year").textContent = new Date().getUTCFullYear().toString(10);
+					</script>
 				</div>
 
 			</div>
